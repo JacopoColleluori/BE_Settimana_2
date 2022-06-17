@@ -8,7 +8,7 @@ public class Articolo {
     //proprietà
     private final int id;
     private final String titolo;
-    private final LocalDate data ;
+    private  LocalDate data ;
     private final String categoria;
     private final String testo;
     private  Autore autore;
@@ -40,6 +40,10 @@ public class Articolo {
 
     public LocalDate getData() {
         return data;
+    }
+
+    public void setData(LocalDate data) {
+        this.data = data;
     }
 
     public String getCategoria() {

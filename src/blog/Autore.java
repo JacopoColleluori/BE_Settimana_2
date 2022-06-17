@@ -2,6 +2,8 @@ package blog;
 
 import blog.interfacce.Scrittore;
 
+import java.time.LocalDate;
+
 public class Autore implements Scrittore {
     private final int id;
     private final String nome;
@@ -24,6 +26,7 @@ public class Autore implements Scrittore {
 
     public Articolo scriviArticolo(Articolo infoArticolo) {
         infoArticolo.setAutore(this);
+        infoArticolo.setData(LocalDate.now());
         return infoArticolo;
     }
 }

@@ -34,7 +34,7 @@ public class MainBlog {
                 "senza vita questa mattina dalla Scotland Yard", new Autore(3,"Frederick","Best" )
                 ,new Tags(tagArticolo3),"Articolo di giallo e noir, con ambientazioni londinesi di fine '800");
 
-        /*Utilizzo metodo interfaccia scrittore */
+        /*Utilizzo metodo interfaccia scrittore dove viene messo e/o cambiato l'autore e la data dell'articolo*/
        Autore autore=new Autore(4,"Saverio","Raimondi");
        articoli[2]=autore.scriviArticolo(articoli[2]);
 
